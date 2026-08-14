@@ -1,7 +1,7 @@
-# Documentos legales de GastoPlan
+# Documentos legales de PlanGasto
 
 Sitio estático con los Términos de Uso y la Política de Privacidad de
-[GastoPlan](https://play.google.com/store/apps/details?id=com.eduardolivorevelo.gastoplan),
+[PlanGasto](https://play.google.com/store/apps/details?id=com.eduardolivorevelo.gastoplan),
 en español e inglés.
 
 Este repositorio es público **solo porque las tiendas exigen que estos

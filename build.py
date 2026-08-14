@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Genera el sitio legal de GastoPlan a partir de los Markdown de la app.
+"""Genera el sitio legal de PlanGasto a partir de los Markdown de la app.
 
 La fuente única de verdad son los cuatro documentos de `legal/` en el
 repositorio de la aplicación. Este script NO los edita: solo los convierte a
@@ -20,10 +20,10 @@ from pathlib import Path
 
 # md de origen -> (idioma, slug de la URL, título del navegador)
 PAGES = {
-    "privacidad.md": ("es", "privacidad", "Política de Privacidad — GastoPlan"),
-    "terminos.md": ("es", "terminos", "Términos de Uso — GastoPlan"),
-    "privacy.md": ("en", "privacy", "Privacy Policy — GastoPlan"),
-    "terms.md": ("en", "terms", "Terms of Use — GastoPlan"),
+    "privacidad.md": ("es", "privacidad", "Política de Privacidad — PlanGasto"),
+    "terminos.md": ("es", "terminos", "Términos de Uso — PlanGasto"),
+    "privacy.md": ("en", "privacy", "Privacy Policy — PlanGasto"),
+    "terms.md": ("en", "terms", "Terms of Use — PlanGasto"),
 }
 
 # El documento equivalente en el otro idioma, para el conmutador de cabecera.
@@ -246,11 +246,11 @@ def page(title: str, lang: str, body: str, switch_href: str, switch_label: str) 
 <body>
 <div class="wrap">
 <header class="bar">
-  <span class="app"><a href="{home}">GastoPlan</a></span>
+  <span class="app"><a href="{home}">PlanGasto</a></span>
   <a href="{switch_href}">{switch_label}</a>
 </header>
 {body}
-<footer>GastoPlan · Kevin Eduardo Olivo Revelo · eduardindev@gmail.com</footer>
+<footer>PlanGasto · Kevin Eduardo Olivo Revelo · eduardindev@gmail.com</footer>
 </div>
 </body>
 </html>
@@ -262,12 +262,12 @@ INDEX = """<!DOCTYPE html>
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>GastoPlan — Documentos legales</title>
+<title>PlanGasto — Documentos legales</title>
 <style>__CSS__</style>
 </head>
 <body>
 <div class="wrap">
-<header class="bar"><span class="app">GastoPlan</span></header>
+<header class="bar"><span class="app">PlanGasto</span></header>
 <h1>Documentos legales</h1>
 <h2>Español</h2>
 <ul>
@@ -279,7 +279,7 @@ INDEX = """<!DOCTYPE html>
   <li><a href="en/privacy/">Privacy Policy</a></li>
   <li><a href="en/terms/">Terms of Use</a></li>
 </ul>
-<footer>GastoPlan · Kevin Eduardo Olivo Revelo · eduardindev@gmail.com</footer>
+<footer>PlanGasto · Kevin Eduardo Olivo Revelo · eduardindev@gmail.com</footer>
 </div>
 </body>
 </html>
