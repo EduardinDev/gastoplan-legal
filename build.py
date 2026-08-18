@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
 """Genera el sitio legal de PlanGasto a partir de los Markdown de la app.
 
-La fuente única de verdad son los cuatro documentos de `legal/` en el
-repositorio de la aplicación. Este script NO los edita: solo los convierte a
-HTML. Si un documento cambia allí, se vuelve a ejecutar esto y se publica.
+La fuente única de verdad son los Markdown de `legal/` en el repositorio de
+la aplicación: los cuatro documentos legales y las dos páginas de soporte.
+Este script NO los edita: solo los convierte a HTML. Si un documento cambia
+allí, se vuelve a ejecutar esto y se publica.
 
     python3 build.py [ruta/al/repo/de/la/app]
 
@@ -24,6 +25,11 @@ PAGES = {
     "terminos.md": ("es", "terminos", "Términos de Uso — PlanGasto"),
     "privacy.md": ("en", "privacy", "Privacy Policy — PlanGasto"),
     "terms.md": ("en", "terms", "Terms of Use — PlanGasto"),
+    # Soporte no es un documento legal, pero comparte sitio y tubería: la
+    # ficha de App Store exige una URL de soporte y crear un segundo sitio
+    # para una página sería peor.
+    "soporte.md": ("es", "soporte", "Soporte — PlanGasto"),
+    "support.md": ("en", "support", "Support — PlanGasto"),
 }
 
 # El documento equivalente en el otro idioma, para el conmutador de cabecera.
@@ -32,6 +38,8 @@ COUNTERPART = {
     "terminos.md": ("terms.md", "English"),
     "privacy.md": ("privacidad.md", "Español"),
     "terms.md": ("terminos.md", "Español"),
+    "soporte.md": ("support.md", "English"),
+    "support.md": ("soporte.md", "Español"),
 }
 
 # Nota editorial interna que no debe publicarse: la sustituye el conmutador.
@@ -262,20 +270,22 @@ INDEX = """<!DOCTYPE html>
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>PlanGasto — Documentos legales</title>
+<title>PlanGasto — Soporte y documentos legales</title>
 <style>__CSS__</style>
 </head>
 <body>
 <div class="wrap">
 <header class="bar"><span class="app">PlanGasto</span></header>
-<h1>Documentos legales</h1>
+<h1>Soporte y documentos legales</h1>
 <h2>Español</h2>
 <ul>
+  <li><a href="es/soporte/">Soporte y preguntas frecuentes</a></li>
   <li><a href="es/privacidad/">Política de Privacidad</a></li>
   <li><a href="es/terminos/">Términos de Uso</a></li>
 </ul>
 <h2>English</h2>
 <ul>
+  <li><a href="en/support/">Support and FAQ</a></li>
   <li><a href="en/privacy/">Privacy Policy</a></li>
   <li><a href="en/terms/">Terms of Use</a></li>
 </ul>

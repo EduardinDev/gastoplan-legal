@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Soporte — PlanGasto</title>
+<style>
+:root {
+  color-scheme: light dark;
+  --bg: #ffffff;
+  --fg: #1a1a1a;
+  --muted: #5c5c5c;
+  --rule: #e3e3e3;
+  --accent: #1f6feb;
+  --code-bg: #f2f2f2;
+  --table-head: #f7f7f7;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #14161a;
+    --fg: #e6e6e6;
+    --muted: #a0a0a0;
+    --rule: #2c2f36;
+    --accent: #6ea8ff;
+    --code-bg: #22262d;
+    --table-head: #1c1f25;
+  }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--fg);
+  font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+        "Helvetica Neue", Arial, sans-serif;
+  -webkit-text-size-adjust: 100%;
+}
+.wrap { max-width: 46rem; margin: 0 auto; padding: 2rem 1.25rem 5rem; }
+header.bar {
+  display: flex; flex-wrap: wrap; gap: .75rem;
+  align-items: center; justify-content: space-between;
+  padding-bottom: 1rem; margin-bottom: 2rem;
+  border-bottom: 1px solid var(--rule);
+}
+header.bar .app { font-weight: 700; letter-spacing: -.01em; }
+header.bar a { color: var(--accent); text-decoration: none; font-size: .9rem; }
+header.bar a:hover { text-decoration: underline; }
+h1 { font-size: 1.75rem; line-height: 1.25; letter-spacing: -.02em; margin: 0 0 1.5rem; }
+h2 { font-size: 1.2rem; margin: 2.5rem 0 .75rem; letter-spacing: -.01em; }
+h3 { font-size: 1rem; margin: 1.75rem 0 .5rem; }
+p, li { overflow-wrap: break-word; }
+a { color: var(--accent); }
+hr { border: 0; border-top: 1px solid var(--rule); margin: 2rem 0; }
+code {
+  background: var(--code-bg); padding: .15em .4em;
+  border-radius: 4px; font-size: .875em;
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+}
+blockquote {
+  margin: 1.5rem 0; padding: .25rem 0 .25rem 1rem;
+  border-left: 3px solid var(--rule); color: var(--muted);
+}
+.tablewrap { overflow-x: auto; margin: 1.5rem 0; }
+table { border-collapse: collapse; width: 100%; font-size: .9rem; }
+th, td { border: 1px solid var(--rule); padding: .55rem .7rem; text-align: left; vertical-align: top; }
+th { background: var(--table-head); font-weight: 600; }
+footer { margin-top: 4rem; padding-top: 1.25rem; border-top: 1px solid var(--rule);
+         color: var(--muted); font-size: .85rem; }
+ul { padding-left: 1.25rem; }
+li { margin: .3rem 0; }
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="bar">
+  <span class="app"><a href="../../">PlanGasto</a></span>
+  <a href="../../en/support/">English</a>
+</header>
+<h1>Soporte — PlanGasto</h1>
+<p><strong>Última actualización:</strong> 18 de agosto de 2026</p>
+<hr>
+<h2>Cómo contactarnos</h2>
+<p><strong>Correo de soporte:</strong> <code>eduardindev@gmail.com</code></p>
+<p>Respondemos en un plazo máximo de <strong>5 días hábiles</strong>. Es un proyecto llevado por
+una sola persona, así que a veces la respuesta llega antes y en periodos de
+vacaciones puede tardar algo más.</p>
+<p>Para que podamos ayudarte a la primera, incluye en tu mensaje:</p>
+<ul><li>El modelo de tu teléfono y la versión de iOS.</li><li>La versión de PlanGasto, que aparece en Perfil.</li><li>Qué esperabas que pasara y qué pasó en su lugar.</li><li>Una captura de pantalla, si el problema se ve.</li></ul>
+<p><strong>No nos envíes capturas con importes o datos que no quieras compartir.</strong> Para
+diagnosticar casi nada hace falta ver tus cifras reales.</p>
+<hr>
+<h2>Compras</h2>
+<h3>Pagué y no se desbloqueó Pro</h3>
+<p>Abre <strong>Perfil</strong>, entra en la sección <strong>COMPRAS</strong> y pulsa <strong>Restaurar compra</strong>.
+No necesitas iniciar sesión en nada: el acceso va ligado a la cuenta de App
+Store con la que compraste.</p>
+<p>Si sigue sin activarse, comprueba que el iPhone esté usando <strong>esa misma cuenta
+de App Store</strong>, no otra. Si compraste con una cuenta y el teléfono está con
+otra, la compra no aparece.</p>
+<p>Si aun así no funciona, escríbenos indicando la fecha aproximada de la compra.</p>
+<h3>Reinstalé la app o cambié de iPhone</h3>
+<p>Tu compra no se pierde. Instala PlanGasto, entra en <strong>Perfil → COMPRAS →
+Restaurar compra</strong> y Pro vuelve a activarse.</p>
+<p>Ten en cuenta que <strong>tus planificaciones y gastos no viajan con la compra</strong>: eso
+son datos guardados en el teléfono anterior, no en la tienda. Ver más abajo.</p>
+<h3>¿Pro es una suscripción?</h3>
+<p>No. <strong>PlanGasto Pro es un pago único.</strong> No se renueva, no caduca y no hay nada
+que cancelar. Lo compras una vez y queda ligado a tu cuenta de App Store.</p>
+<h3>¿Qué desbloquea Pro?</h3>
+<ul><li>Reportes ilimitados en PDF y Excel.</li><li>Planificaciones sin límite.</li></ul>
+<p>La versión gratuita incluye todo lo demás: crear planificaciones, registrar
+gastos reales, administrar categorías, métricas, tema e idioma. Sus límites son
+<strong>10 planificaciones</strong> y <strong>3 reportes PDF y 3 Excel cada mes</strong>.</p>
+<h3>Compré Pro en Android, ¿lo tengo en el iPhone?</h3>
+<p>No. PlanGasto no tiene cuentas de usuario, así que cada tienda gestiona su
+propia compra: Google Play no sabe nada de App Store ni al revés. Una compra
+hecha en Android no se traslada a un iPhone.</p>
+<p>Es el comportamiento estándar de una aplicación sin registro, y preferimos
+decírtelo antes de que pagues dos veces.</p>
+<h3>Quiero un reembolso</h3>
+<p>Las compras las procesa <strong>Apple</strong>, no nosotros, así que los reembolsos se
+solicitan directamente a Apple desde
+<a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>. Nosotros no
+podemos emitirlos ni consultarlos.</p>
+<p>Si el motivo es que algo no funciona, escríbenos primero: puede que tenga
+arreglo.</p>
+<hr>
+<h2>Tus datos</h2>
+<h3>¿Dónde se guarda lo que escribo?</h3>
+<p>Únicamente en tu teléfono. PlanGasto no tiene servidores y no incorpora ningún
+cliente de red: técnicamente no puede enviar tu información a ninguna parte.
+Detalle completo en la <a href="../privacidad/">Política de Privacidad</a>.</p>
+<h3>Perdí el teléfono, ¿podéis recuperar mis planificaciones?</h3>
+<p>No podemos. Como nunca recibimos tus datos, no tenemos ninguna copia que
+devolverte. Esto es consecuencia directa de que la app no recopile nada.</p>
+<p>Si quieres conservar un registro fuera del teléfono, exporta tus reportes en PDF
+o Excel desde <strong>Descargar</strong> y guárdalos donde prefieras.</p>
+<h3>¿Cómo borro todo?</h3>
+<p>Desinstalar la aplicación elimina su base de datos local y con ella todas tus
+planificaciones, gastos y categorías. No queda nada en ningún otro sitio.</p>
+<hr>
+<h2>Otras dudas</h2>
+<h3>La app está en inglés y la quiero en español</h3>
+<p><strong>Perfil → IDIOMA.</strong> Puedes cambiar entre español e inglés cuando quieras, sin
+reiniciar.</p>
+<h3>¿Funciona sin conexión?</h3>
+<p>Sí, por completo. La única vez que PlanGasto necesita internet es para procesar
+o restaurar la compra de Pro, y de eso se encarga la App Store.</p>
+<hr>
+<p>Términos de uso: <a href="../terminos/">terminos.md</a> · Política de privacidad:
+<a href="../privacidad/">privacidad.md</a></p>
+<footer>PlanGasto · Kevin Eduardo Olivo Revelo · eduardindev@gmail.com</footer>
+</div>
+</body>
+</html>
